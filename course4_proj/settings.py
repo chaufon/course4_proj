@@ -41,7 +41,8 @@ class Dev(Configuration):
       'django.contrib.sessions',
       'django.contrib.messages',
       'django.contrib.staticfiles',
-      'movies'
+      'movies',
+      'gh'
   ]
 
   MIDDLEWARE = [
@@ -59,7 +60,7 @@ class Dev(Configuration):
   TEMPLATES = [
       {
           'BACKEND': 'django.template.backends.django.DjangoTemplates',
-          'DIRS': [],
+          'DIRS': ['templates'],
           'APP_DIRS': True,
           'OPTIONS': {
               'context_processors': [
